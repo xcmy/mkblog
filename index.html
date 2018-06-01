@@ -9,14 +9,25 @@
     <title>
         xcmy
     </title>
+
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <!--&lt;!&ndash;     Fonts and icons     &ndash;&gt;-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- CSS Files -->
+
+    <!--&lt;!&ndash; CSS Files &ndash;&gt;-->
+    <!--&lt;!&ndash;new&ndash;&gt;-->
+    <link href="./assets/css/compiled.min.css" rel="stylesheet" />
+    <link href="./assets/css/material-icon.css" rel="stylesheet" />
+    <!--&lt;!&ndash;original&ndash;&gt;-->
     <link href="./assets/css/material-kit.css?v=2.0.3" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <!--&lt;!&ndash; CSS Just for demo purpose, don't include it in your project &ndash;&gt;-->
     <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <style>
+        .title:before{
+            height: auto;
+        }
+    </style>
+
 </head>
 
 <body class="profile-page sidebar-collapse">
@@ -40,7 +51,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://www.xcmy.top/blog/" onclick="scrollToDownload()">
+                    <a class="nav-link" href="./blog.html" onclick="scrollToDownload()">
                         Technology Blog
                     </a>
                 </li>
@@ -80,11 +91,8 @@
                             <img src="./assets/img/faces/christian.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
                         </div>
                         <div class="name">
-                            <h3 class="title">Fei Yang</h3>
+                            <h3 class="title">xcmy</h3>
                             <h6>Programmer</h6>
-                            <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                            <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>
@@ -98,17 +106,17 @@
                         <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
-                                    <i class="material-icons">camera</i> Studio
+                                    <i class="material-icons">phone_iphone</i> Studio
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#works" role="tab" data-toggle="tab">
-                                    <i class="material-icons">palette</i> Work
+                                    <i class="material-icons">web</i> Work
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
-                                    <i class="material-icons">favorite</i> Favorite
+                                    <i class="material-icons">personal_video</i> Favorite
                                 </a>
                             </li>
                         </ul>
@@ -131,26 +139,47 @@
                 <div class="tab-pane text-center gallery" id="works">
                     <div class="row">
                         <div class="col-md-3 ml-auto">
-                            <img src="./assets/img/examples/olu-eletu.jpg" class="rounded">
-                            <img src="./assets/img/examples/clem-onojeghuo.jpg" class="rounded">
-                            <img src="./assets/img/examples/cynthia-del-rio.jpg" class="rounded">
+                            <img src="./assets/img/examples/studio-1.jpg" class="rounded">
+                            <img src="./assets/img/examples/studio-2.jpg" class="rounded">
                         </div>
                         <div class="col-md-3 mr-auto">
-                            <img src="./assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                            <img src="./assets/img/examples/clem-onojegaw.jpg" class="rounded">
+                            <img src="./assets/img/examples/studio-5.jpg" class="rounded">
+                            <img src="./assets/img/examples/studio-4.jpg" class="rounded">
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane text-center gallery" id="favorite">
                     <div class="row">
-                        <div class="col-md-3 ml-auto">
-                            <img src="./assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                            <img src="./assets/img/examples/studio-3.jpg" class="rounded">
-                        </div>
                         <div class="col-md-3 mr-auto">
-                            <img src="./assets/img/examples/clem-onojeghuo.jpg" class="rounded">
-                            <img src="./assets/img/examples/olu-eletu.jpg" class="rounded">
-                            <img src="./assets/img/examples/studio-1.jpg" class="rounded">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mr-auto">
+                            <div class="card">
+                                <div class="view overlay">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,3 +230,6 @@
 </body>
 
 </html>
+
+
+
